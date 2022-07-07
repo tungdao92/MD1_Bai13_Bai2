@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="index">
+<button onclick="metersToFeet()">Đổi sang feet </button>
+<button onclick="feetToMesters()">Đổi sang meters</button>
+<h1 id="hienthi1"></h1>
+<h2 id="hienthi2"></h2>
+<script>
+
+    function feetToMesters(feet) {
+        let a=document.getElementById('index').value;
+        let b=a*0.305
+        document.getElementById('hienthi1').innerHTML= b + " " +  " "+ 'Meters'
+         }
+    function metersToFeet(meters) {
+        let a = document.getElementById('index').value;
+        let c = a * 3.279
+        document.getElementById('hienthi1').innerHTML = c + " " +  " "+ 'Feet'
+        }
+</script>
+
+</body>
+</html>
